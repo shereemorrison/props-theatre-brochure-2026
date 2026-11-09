@@ -1,0 +1,311 @@
+import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+export default function Credits() {
+  const navigate = useNavigate();
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const subtitleRef = useRef<HTMLDivElement>(null);
+  const introRef = useRef<HTMLParagraphElement>(null);
+  const section1Ref = useRef<HTMLElement>(null);
+  const section2Ref = useRef<HTMLElement>(null);
+  const section3Ref = useRef<HTMLElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  useGSAP(() => {
+    if (!titleRef.current || !subtitleRef.current || !introRef.current || !containerRef.current) {
+      return;
+    }
+
+    // Helper function to get all content elements from a section in document order
+    const getSectionElements = (sectionRef: React.RefObject<HTMLElement>): Element[] => {
+      if (!sectionRef.current) return [];
+      
+      const elements: Element[] = [];
+      
+      // Get all direct children and nested content in order
+      const walker = document.createTreeWalker(
+        sectionRef.current,
+        NodeFilter.SHOW_ELEMENT,
+        {
+          acceptNode: (node) => {
+            // Include h3, p, ul, and li elements, but exclude wrapper divs
+            const tagName = node.nodeName.toLowerCase();
+            if (tagName === 'h3' || tagName === 'p' || tagName === 'ul' || tagName === 'li') {
+              // Don't include the subtitle div
+              if (node === subtitleRef.current) return NodeFilter.FILTER_REJECT;
+              return NodeFilter.FILTER_ACCEPT;
+            }
+            return NodeFilter.FILTER_SKIP;
+          }
+        }
+      );
+      
+      let node;
+      while (node = walker.nextNode()) {
+        elements.push(node as Element);
+      }
+
+      return elements;
+    };
+
+    // Get all elements from sections
+    const section1Elements = getSectionElements(section1Ref);
+    const section2Elements = getSectionElements(section2Ref);
+    const section3Elements = getSectionElements(section3Ref);
+
+    // Set initial state for all elements
+    gsap.set([
+      titleRef.current,
+      subtitleRef.current,
+      introRef.current,
+      ...section1Elements,
+      ...section2Elements,
+      ...section3Elements
+    ], {
+      opacity: 0,
+      y: 20
+    });
+
+    // Create timeline for sequential top-to-bottom animation
+    const tl = gsap.timeline();
+
+    // Animate title and subtitle together with stagger (original behavior)
+    tl.fromTo([titleRef.current, subtitleRef.current], 
+      {
+        opacity: 0,
+        y: 30
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: 'power2.out'
+      }
+    );
+
+    // Then intro paragraph
+    tl.to(introRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: 'power2.out'
+    }, '-=0.3');
+
+    // Then section 1 elements sequentially
+    if (section1Elements.length > 0) {
+      tl.to(section1Elements, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'power2.out'
+      }, '-=0.2');
+    }
+
+    // Then section 2 elements sequentially
+    if (section2Elements.length > 0) {
+      tl.to(section2Elements, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'power2.out'
+      }, '-=0.2');
+    }
+
+    // Then section 3 elements sequentially
+    if (section3Elements.length > 0) {
+      tl.to(section3Elements, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'power2.out'
+      }, '-=0.2');
+    }
+
+    return () => {
+      tl.kill();
+    };
+  }, { scope: containerRef });
+  
+  return (
+    <div className="detail-page" ref={containerRef}>
+      <button 
+        className="back-button" 
+        onClick={() => navigate('/')}
+      >
+        ← Back
+      </button>
+      <div className="detail-content" style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        maxWidth: '900px',
+        margin: '0 auto',
+        padding: 'clamp(2rem, 5vh, 4rem) clamp(1rem, 3vw, 2rem)',
+        textAlign: 'left'
+      }}>
+        <h1 
+          ref={titleRef}
+          style={{ 
+            fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+            marginBottom: 'clamp(0.5rem, 1vh, 1rem)',
+            fontFamily: 'var(--font-heading)',
+            width: '100%',
+            textAlign: 'center'
+          }}
+        >
+          Looking forward to 2026
+        </h1>
+        
+        <div 
+          ref={subtitleRef}
+          style={{
+            fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
+            color: '#ffffff',
+            marginBottom: 'clamp(2rem, 4vh, 3rem)',
+            fontFamily: 'var(--font-heading)',
+            fontWeight: 600,
+            width: '100%',
+            textAlign: 'center'
+          }}
+        >
+          Good Luck & Best Wishes!
+        </div>
+
+        <p 
+          ref={introRef}
+          style={{ 
+            fontSize: 'clamp(1rem, 2.2vw, 1.2rem)',
+            color: '#ffffff',
+            fontFamily: 'var(--font-body)',
+            lineHeight: 1.7,
+            marginBottom: 'clamp(2rem, 4vh, 3rem)'
+          }}
+        >
+          As we head into a brand new year, we have some exciting updates to share:
+        </p>
+
+        <section ref={section1Ref} style={{ marginBottom: 'clamp(2rem, 4vh, 3rem)' }}>
+          <h3 style={{
+            fontSize: 'clamp(1.3rem, 3vw, 1.8rem)',
+            color: '#ffd700',
+            fontFamily: 'var(--font-heading)',
+            fontWeight: 600,
+            marginBottom: 'clamp(1rem, 2vh, 1.5rem)'
+          }}>
+            Staff Changes:
+          </h3>
+          <ul style={{
+            fontSize: 'clamp(1rem, 2.2vw, 1.2rem)',
+            color: 'rgba(255, 255, 255, 0.9)',
+            fontFamily: 'var(--font-body)',
+            lineHeight: 1.8,
+            paddingLeft: 'clamp(1.5rem, 3vw, 2rem)',
+            listStyleType: 'disc'
+          }}>
+            <li style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1rem)' }}>
+              Paris is off on a new adventure to Kangaroo Island, where he'll be building his own home – we wish him all the best!
+            </li>
+            <li style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1rem)' }}>
+              Olivia will be taking some time for family, as she prepares to welcome her second baby – congratulations, Olivia!
+            </li>
+            <li style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1rem)' }}>
+              We're thrilled to welcome Becka to the team as our new Admin, and to celebrate the return of our wonderful Teacher Assistants – Sara, Darcy, and Matilda!
+            </li>
+            <li style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1rem)' }}>
+              Sharna and Alise will also be back, full of energy (and bells on)!
+            </li>
+          </ul>
+        </section>
+
+        <section ref={section2Ref} style={{ marginBottom: 'clamp(2rem, 4vh, 3rem)' }}>
+          <h3 style={{
+            fontSize: 'clamp(1.3rem, 3vw, 1.8rem)',
+            color: '#ffd700',
+            fontFamily: 'var(--font-heading)',
+            fontWeight: 600,
+            marginBottom: 'clamp(1rem, 2vh, 1.5rem)'
+          }}>
+            Student Enrolments for 2026
+          </h3>
+          <div style={{
+            fontSize: 'clamp(1rem, 2.2vw, 1.2rem)',
+            color: 'rgba(255, 255, 255, 0.9)',
+            fontFamily: 'var(--font-body)',
+            lineHeight: 1.7
+          }}>
+            <p style={{ marginBottom: 'clamp(1rem, 2vh, 1.5rem)' }}>
+              Your child's current enrolment will automatically roll over into 2026, unless you let us know otherwise.
+            </p>
+            <p style={{ marginBottom: 'clamp(1rem, 2vh, 1.5rem)' }}>
+              If your child won't be returning, please contact us so we can share our love and well wishes – and open their spot for the next eager creative!
+            </p>
+            <ul style={{
+              paddingLeft: 'clamp(1.5rem, 3vw, 2rem)',
+              listStyleType: 'disc',
+              marginBottom: 'clamp(1rem, 2vh, 1.5rem)'
+            }}>
+              <li style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1rem)' }}>
+                Students aged 9 years (previously Stage One) will move up to Stage Two (ages 9–12 years) – please let us know which class day suits your family best.
+              </li>
+              <li style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1rem)' }}>
+                Students attending high school in 2026 will graduate to Stage Three (ages 13–16 years) – again, please let us know your preferred class day.
+              </li>
+            </ul>
+            <p style={{ marginBottom: 'clamp(1rem, 2vh, 1.5rem)' }}>
+              The program structure remains the same, so please select your 2026 class from the timetable available on our{' '}
+              <a 
+                href="https://www.propstheatre.com.au/program" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#ffd700', textDecoration: 'underline' }}
+              >
+                www.propstheatre.com.au/program
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section ref={section3Ref}>
+          <h3 style={{
+            fontSize: 'clamp(1.3rem, 3vw, 1.8rem)',
+            color: '#ffd700',
+            fontFamily: 'var(--font-heading)',
+            fontWeight: 600,
+            marginBottom: 'clamp(1rem, 2vh, 1.5rem)'
+          }}>
+            Looking to join us?
+          </h3>
+          <div style={{
+            fontSize: 'clamp(1rem, 2.2vw, 1.2rem)',
+            color: 'rgba(255, 255, 255, 0.9)',
+            fontFamily: 'var(--font-body)',
+            lineHeight: 1.7
+          }}>
+            <p style={{ marginBottom: 'clamp(1rem, 2vh, 1.5rem)' }}>
+              Please fill out an enrolment form via the website{' '}
+              <a 
+                href="https://www.propstheatre.com.au" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#ffd700', textDecoration: 'underline' }}
+              >
+                www.propstheatre.com.au
+              </a>
+            </p>
+            <p>
+              We will be in touch once reenrolments have been processed to ensure your chosen place is available!
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}
+

@@ -1,0 +1,934 @@
+{
+  "awardEligible": [
+    "Aarav Alexander",
+    "Aria Veera",
+    "London Parker",
+    "Tika Churchill",
+    "William Sandiford",
+    "Aida Burns",
+    "Ava Hawkey",
+    "Lachlan Longford",
+    "Milla Gregg",
+    "Willow Fuamatu",
+    "Cora Critch",
+    "Ivy Burdeu",
+    "Lydia Deepan",
+    "Millie Jensen",
+    "Tahlia Giffard",
+    "Charlie Wills",
+    "Olivia Osborne",
+    "Audrey Smythe",
+    "Clara Edgar-Patching",
+    "Imogen Diss",
+    "Khadija Eltoubshi",
+    "Leila Cole",
+    "Matilda Engi",
+    "Romilly Park",
+    "Samuel Mulcair",
+    "Tala Kotsiopoulos",
+    "Temperance Williamson",
+    "Tori Hancox",
+    "Amelia Beukes",
+    "Anna Francis",
+    "Charlee Russell",
+    "Eliza Hepburn",
+    "George Dewhurst",
+    "Hannah Rodd",
+    "Memphis Meggs",
+    "Mila McMillan",
+    "Mila Holmfield",
+    "Sam Miller",
+    "Sophie Breewel",
+    "Teddy Thomson",
+    "Eve Martin",
+    "Georgina Sbaglia",
+    "Poppy Stanaway",
+    "Alice Stockx",
+    "Cleo Giri",
+    "Edyn Godden",
+    "Elena Musembi",
+    "Jaylin Climas",
+    "Kayan Musembi",
+    "Matthew van der Spek",
+    "Nathaniel Marsden",
+    "Oren Sergi",
+    "Zoe Burr",
+    "Alex Hicks",
+    "Amelia Greening",
+    "Ava Giffard",
+    "Ella Henshall",
+    "Harper Ridgeway",
+    "Isla Mealmaker",
+    "Josie White",
+    "Kaia Langeder",
+    "Kaylee Hitchcock",
+    "Leo Turner",
+    "Matilda Stubbins",
+    "Millie Haydock",
+    "Willow Johnson",
+    "Zarah Mealmaker",
+    "Ivy Spicer",
+    "Lilly Foster",
+    "Matilda Robertson",
+    "Trinity Parker",
+    "Alira Hill",
+    "Elsie Rice",
+    "Jackson Spicer",
+    "Tamati McLarty",
+    "Abigail McKeown",
+    "Allie Howden",
+    "Audrey Pugh",
+    "Evelyn Shay",
+    "Francesca Volpato",
+    "Gweny Horner-Dodson",
+    "Jack Boadle",
+    "Joane Soille",
+    "Olive Casey-Sakar",
+    "Oliver Richardson",
+    "April Muscovich",
+    "Blaise Carr",
+    "Elsie Sharp",
+    "Erin Mills",
+    "Eve Sheldrick",
+    "Freddy Campbell",
+    "Ingrid Campbell",
+    "Isla Rorke",
+    "Lotti Anstee",
+    "Macey Camm",
+    "Matilda Boadle",
+    "Rachel Toifl",
+    "Reyansh Thaker",
+    "Sophie Pedrotti",
+    "Arabella McGowen",
+    "Charlotte Bysouth",
+    "Corazon Mangantulao",
+    "Marcelle Varma",
+    "Scarlett Besley",
+    "Thomas McColl"
+  ],
+  "performerData": [
+    {
+      "date": "Monday, 30 November 2026",
+      "time": "4:00 PM to 5:00 PM",
+      "stage": "Stage One",
+      "performers": [
+        {
+          "name": "Aarav Alexander",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Ava Hawkey",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Dakoda East",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Eadie Glatz",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Harli Blackley",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Leo Epps",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Liam Pennington",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Lydia Deepan",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Mia Namavar",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Millie Jensen",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Sophie House",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Tika Churchill",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Willow Fuamatu",
+          "commitment": "1st Medal: 2 years of drama"
+        }
+      ]
+    },
+    {
+      "date": "Monday, 30 November 2026",
+      "time": "5:00 PM to 6:00 PM",
+      "stage": "Stage Two",
+      "performers": [
+        {
+          "name": "Aria Veera",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Astrid Turnbull",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Cora Critch",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Darby Scott-Anderson",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ella Singe",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ivy Burdeu",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Lilly Nadin",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Lilly Tresize",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Logan Shard",
+          "commitment": "(None)"
+        },
+        {
+          "name": "London Parker",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Maggie Amarant",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Matilda Stubbins",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Nellie Ratcliffe",
+          "commitment": "(None)"
+        },
+        {
+          "name": "William Sandiford",
+          "commitment": "First Year Pin November"
+        }
+      ]
+    },
+    {
+      "date": "Monday, 30 November 2026",
+      "time": "6:00 PM to 7:00 PM",
+      "stage": "Stage Three",
+      "performers": [
+        {
+          "name": "Aida Burns",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Amelia Watkins",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Charlie Wills",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Clementine Gray",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ella Bailey",
+          "commitment": "(None)"
+        },
+        {
+          "name": "George Clohesy",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Isabella Wiegard",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Keira Heath",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Lachlan Longford",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Layla Ware",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Maggie Deacon",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Milla Gregg",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Milla Webb",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Olivia Osborne",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Tahlia Giffard",
+          "commitment": "2nd Medal: 4 years of drama"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday, 1 December 2026",
+      "time": "4:00 PM to 5:00 PM",
+      "stage": "Stage Two",
+      "performers": [
+        {
+          "name": "Amelia Beukes",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Charlee Russell",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Clara Edgar-Patching",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "George Dewhurst",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Hannah Rodd",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Leila Cole",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Matilda Engi",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Mila McMillan",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Poppy Stanaway",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Sara Bates",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Sophie Breewel",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Teddy Thomson",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Tori Hancox",
+          "commitment": "First Year Pin November"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday, 1 December 2026",
+      "time": "5:00 PM to 6:00 PM",
+      "stage": "Stage Two",
+      "performers": [
+        {
+          "name": "Anna Francis",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Arlie Hambly-Jones",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Dolly Hall",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Eliza Hepburn",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Elliot Leavesley",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Emily Ede",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Greta Sbaglia",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Imogen Diss",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Khadija Eltoubshi",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Marley Norman",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Memphis Meggs",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Mila Holmfield",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Otto Luedecke",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ruby Sait",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Samuel Mulcair",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Tala Kotsiopoulos",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Temperance Williamson",
+          "commitment": "First Year Pin November"
+        }
+      ]
+    },
+    {
+      "date": "Tuesday, 1 December 2026",
+      "time": "6:00 PM to 7:00 PM",
+      "stage": "Stage Three",
+      "performers": [
+        {
+          "name": "Alice Stockx",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Amelia O'Rielly",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Athena Jones",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Audrey Smythe",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Bailey Norton",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Charlie Smith",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Charlotte Perryman",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ellen Frigerio",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Eve Martin",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "George Macumber",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Georgina Sbaglia",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Grace Beattie",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Liam Westbury",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Romilly Park",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Taleitha Perrow",
+          "commitment": "(None)"
+        }
+      ]
+    },
+    {
+      "date": "Wednesday, 2 December 2026",
+      "time": "4:00 PM to 5:00 PM",
+      "stage": "Stage One",
+      "performers": [
+        {
+          "name": "Amelia Greening",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Cleo Giri",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Ella Henshall",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Elsie Somerville",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Harper Ridgeway",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Jaylin Climas",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Josie White",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Kayan Musembi",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Leo Turner",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Lilly Foster",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Matthew van der Spek",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Nathaniel Marsden",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Peyton Reid",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Zoe Burr",
+          "commitment": "First Year Pin November"
+        }
+      ]
+    },
+    {
+      "date": "Wednesday, 2 December 2026",
+      "time": "5:00 PM to 6:00 PM",
+      "stage": "Stage Two",
+      "performers": [
+        {
+          "name": "Alex Hicks",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Edyn Godden",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Elena Musembi",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Emilee Lovriha",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Isla Mealmaker",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Ivanna Motari",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ivy Spicer",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Jackson Spicer",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Malis Worrell",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Matilda Robertson",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Millie Haydock",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Oren Sergi",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Sam Miller",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Talia Roe",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Trinity Parker",
+          "commitment": "2nd Medal: 4 years of drama"
+        }
+      ]
+    },
+    {
+      "date": "Wednesday, 2 December 2026",
+      "time": "6:00 PM to 7:00 PM",
+      "stage": "Stage Three",
+      "performers": [
+        {
+          "name": "Alira Hill",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Anais Lyons",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Arlo Sergi-Downie",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ava Giffard",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Elsie Rice",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Hannah Torney",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Innes Sergi-Downie",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Isabelle Smith",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Jack Carter",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Kaia Langeder",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Kaylee Hitchcock",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Neve Duthie",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Paige Dejong",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Skylar Shard",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Tamati McLarty",
+          "commitment": "3rd Medal: 6 years of drama"
+        },
+        {
+          "name": "Willow Johnson",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Zarah Mealmaker",
+          "commitment": "1st Medal: 2 years of drama"
+        }
+      ]
+    },
+    {
+      "date": "Thursday, 3 December 2026",
+      "time": "4:00 PM to 5:00 PM",
+      "stage": "Stage One",
+      "performers": [
+        {
+          "name": "Alexis O'Shea",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Allie Howden",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Dominica Mangantulao",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Elsie Untwan",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Ingrid Campbell",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Minnie Petterlin",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Olive Casey-Sakar",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Oliver Richardson",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Reyansh Thaker",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Ziggy",
+          "commitment": "(None)"
+        }
+      ]
+    },
+    {
+      "date": "Thursday, 3 December 2026",
+      "time": "5:00 PM to 6:00 PM",
+      "stage": "Stage Two",
+      "performers": [
+        {
+          "name": "Avery Murtagh",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Blaise Carr",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Charlotte Vandervalk",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Constance Price",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Corazon Mangantulao",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Dominic Petterlin",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Elsie Sharp",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Emily Hughes",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Freddy Campbell",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Gweny Horner-Dodson",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Jack Boadle",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Jasper Walton",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Logan Crothers",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Phillipa Kohlman",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Scarlett Besley",
+          "commitment": "2nd Medal: 4 years of drama"
+        }
+      ]
+    },
+    {
+      "date": "Thursday, 3 December 2026",
+      "time": "6:00 PM to 7:00 PM",
+      "stage": "Stage Three",
+      "performers": [
+        {
+          "name": "Addie Oates",
+          "commitment": "(None)"
+        },
+        {
+          "name": "April Muscovich",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Ella Manypeney",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Isla Rorke",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Letty Sendy",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Lexi Read",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Marcelle Varma",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Matilda Boadle",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Nico Gill",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Sophie Pedrotti",
+          "commitment": "1st Medal: 2 years of drama"
+        }
+      ]
+    },
+    {
+      "date": "Friday, 3 December 2026",
+      "time": "5:00 PM to 6:00 PM",
+      "stage": "Stage Two",
+      "performers": [
+        {
+          "name": "Abigail McKeown",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Arabella McGowen",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Audrey Pugh",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Charlotte Bysouth",
+          "commitment": "2nd Medal: 4 years of drama"
+        },
+        {
+          "name": "Erin Mills",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Eve Sheldrick",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Evelyn Shay",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Francesca Volpato",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Joane Soille",
+          "commitment": "First Year Pin November"
+        },
+        {
+          "name": "Lotti Anstee",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Macey Camm",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Rachel Toifl",
+          "commitment": "1st Medal: 2 years of drama"
+        },
+        {
+          "name": "Sienna Davey",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Susannah Mayne",
+          "commitment": "(None)"
+        },
+        {
+          "name": "Thomas McColl",
+          "commitment": "2nd Medal: 4 years of drama"
+        }
+      ]
+    }
+  ]
+}
