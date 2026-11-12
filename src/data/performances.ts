@@ -14,7 +14,6 @@ export interface Day {
   day: string; // "Monday 24th", "Tuesday 25th", etc.
   year: number;
   stages: Stage[];
-  hasThankYou?: boolean; // For Friday which has Thank You section
 }
 
 // Play templates - define once, reuse across days
@@ -107,25 +106,14 @@ export const days: Day[] = [
     ]
   },
   {
-    id: 'thursday-3rd',
-    day: 'Thursday 3rd',
+    id: 'thursday-friday',
+    day: 'Thursday 3rd & Friday 4th',
     year: 2026,
     stages: [
-      createStage('stage-one-thursday', 'Stage One', 'learners-permit'),
-      createStage('stage-two-thursday', 'Stage Two', 'food-fight'),
-      createStage('stage-two-thursday', 'Stage Two', 'a-cut-above'),
-      createStage('stage-three-thursday', 'Stage Three', 'tortellini-in-love'),
+      createStage('stage-one-thursday', 'Stage One · Thursday', 'learners-permit'),
+      createStage('stage-two-thursday', 'Stage Two · Thursday', 'food-fight'),
+      createStage('stage-two-friday', 'Stage Two · Friday', 'a-cut-above'),
+      createStage('stage-three-thursday', 'Stage Three · Thursday', 'tortellini-in-love'),
     ]
   },
-  {
-      id: 'friday-4th',
-      day: 'Friday 4th',
-      year: 2026,
-      stages: [
-        createStage('stage-one-friday', 'Stage One', 'learners-permit'),
-        createStage('stage-two-friday', 'Stage Two', 'food-fight'),
-        createStage('stage-two-friday', 'Friday Stage Two', 'a-cut-above'),
-        createStage('stage-three-friday', 'Stage Three', 'tortellini-in-love'),
-      ]
-    },
 ];

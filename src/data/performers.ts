@@ -97,8 +97,8 @@ function mapDateToDayId(date: string): string {
     [DATES.MONDAY]: 'monday-30th',
     [DATES.TUESDAY]: 'tuesday-1st',
     [DATES.WEDNESDAY]: 'wednesday-2nd',
-    [DATES.THURSDAY]: 'thursday-3rd',
-    [DATES.FRIDAY]: 'thursday-3rd',
+    [DATES.THURSDAY]: 'thursday-friday',
+    [DATES.FRIDAY]: 'thursday-friday',
   };
   return dateMap[date] || date.toLowerCase().replace(/[^a-z0-9]/g, '-');
 }

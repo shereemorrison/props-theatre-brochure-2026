@@ -14,8 +14,8 @@ function LandingPage({ showMenu = true }: LandingPageProps) {
       '/day/monday-30th',
       '/day/tuesday-1st',
       '/day/wednesday-2nd',
-      '/day/thursday-3rd',
-      '/day/friday-4th',
+      '/day/thursday-friday',
+      '/thank-you',
       '/staffing',
     ];
     if (pageIndex >= 0 && pageIndex < routes.length) {

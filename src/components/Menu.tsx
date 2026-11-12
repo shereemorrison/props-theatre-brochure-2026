@@ -28,9 +28,9 @@ const menuItems = [
   { id: 'monday-30th', title: 'Mon', subtitle: '30th', route: '/day/monday-30th', year: 2026, background: mondayBg },
   { id: 'tuesday-1st', title: 'Tues', subtitle: '1st', route: '/day/tuesday-1st', year: 2026, background: tuesdayBg },
   { id: 'wednesday-2nd', title: 'Wed', subtitle: '2nd', route: '/day/wednesday-2nd', year: 2026, background: wednesdayBg },
-  { id: 'thursday-3rd', title: 'Thurs', subtitle: '3rd', route: '/day/thursday-3rd', year: 2026, background: thursdayBg },
-  { id: 'friday-4th', title: 'Fri', subtitle: '4th', route: '/day/friday-4th', year: 2026, background: fridayBg},
-  { id: 'staffing', title: 'Staffing 2027', subtitle: '', route: '/staffing', background: fridayBg },
+  { id: 'thursday-friday', title: 'Thurs & Fri', subtitle: '3rd & 4th', route: '/day/thursday-friday', year: 2026, background: thursdayBg },
+  { id: 'thank-you', title: 'Thank you and Props Be With You', subtitle: '', route: '/thank-you', background: fridayBg },
+  { id: 'staffing', title: 'Staffing 2027', subtitle: '', route: '/staffing', background: onwardsBg },
 ];
 
 export default function Menu({ onPageClick, isVisible, skipAnimation = false }: MenuProps) {
@@ -290,7 +290,7 @@ export default function Menu({ onPageClick, isVisible, skipAnimation = false }: 
               >
                 <h2
                   style={{
-                    fontSize: 'clamp(1.1rem, 3vw, 1.6rem)',
+                    fontSize: item.title.length > 24 ? 'clamp(0.72rem, 1.6vw, 0.98rem)' : 'clamp(1.1rem, 3vw, 1.6rem)',
                     fontFamily: 'var(--font-heading), "Oswald", sans-serif',
                     fontWeight: 700,
                     color: '#ffd700',
