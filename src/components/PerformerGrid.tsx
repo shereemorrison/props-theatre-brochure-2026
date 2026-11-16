@@ -5,18 +5,11 @@ import { normalizePerformerNameForPhoto } from '../utils/photoMapper';
 // Import all performer photos
 const performerPhotos = import.meta.glob('../assets/images/performers/*.{jpg,jpeg,png,webp}', { eager: true });
 
-// Import the no photo placeholder
-// @ts-ignore - Image import handled by Vite
-import noPhotoImage from '../assets/images/performers/nophoto.png';
-
 interface PerformerGridProps {
   performers: Performer[];
 }
 
 export default function PerformerGrid({ performers }: PerformerGridProps) {
-  // List of performers who should use nophoto.png
-  const performersWithoutPhotos = ['Tika Churchill', 'Nathaniel Marsden', 'Trinity Parker'];
-  
   // Create a map of normalized names to photo paths
   // Prioritize webp files over jpg/png for better performance
   const photoMap = useMemo(() => {
@@ -51,11 +44,6 @@ export default function PerformerGrid({ performers }: PerformerGridProps) {
 
   // Function to get photo path for a performer
   const getPhotoPath = (performer: Performer): string | null => {
-    // Check if this performer should use nophoto.png
-    if (performersWithoutPhotos.includes(performer.name)) {
-      return noPhotoImage;
-    }
-    
     const normalizedName = normalizePerformerNameForPhoto(performer.name);
     return photoMap.get(normalizedName) || null;
   };
@@ -82,12 +70,14 @@ export default function PerformerGrid({ performers }: PerformerGridProps) {
       {performers.map((performer) => {
         const photoPath = getPhotoPath(performer);
         
-        // Determine award from commitment
         const commitment = performer.commitment;
-        const shouldShowAward = commitment && 
-          commitment !== '(None)' && 
-          commitment !== 'Beginner' && 
-          commitment !== 'Intermediate';
+        const isGraduate = /graduate/i.test(commitment);
+        const otherTitle = commitment.replace(/\s*·\s*Graduate$/i, '').trim();
+        const shouldShowOther = Boolean(otherTitle) &&
+          otherTitle !== 'Graduate' &&
+          otherTitle !== '(None)' &&
+          otherTitle !== 'Beginner' &&
+          otherTitle !== 'Intermediate';
         
         return (
           <div 
@@ -178,7 +168,7 @@ export default function PerformerGrid({ performers }: PerformerGridProps) {
             </div>
 
             {/* Award/Commitment */}
-            {shouldShowAward && (
+            {shouldShowOther && (
               <div style={{
                 color: 'rgba(255, 255, 255, 0.9)',
                 fontFamily: "Oswald, sans-serif",
@@ -188,7 +178,20 @@ export default function PerformerGrid({ performers }: PerformerGridProps) {
                 fontStyle: 'italic',
                 marginTop: '0.25rem'
               }}>
-                {commitment}
+                {otherTitle}
+              </div>
+            )}
+            {isGraduate && (
+              <div style={{
+                color: 'rgba(255, 255, 255, 0.9)',
+                fontFamily: "Oswald, sans-serif",
+                fontSize: 'clamp(0.75rem, 1.6vw, 0.85rem)',
+                textAlign: 'center',
+                opacity: 0.9,
+                fontStyle: 'italic',
+                marginTop: '0.25rem'
+              }}>
+                Graduate
               </div>
             )}
           </div>

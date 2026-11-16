@@ -78,7 +78,6 @@ const PDF_AWARDS = [
   ['Aarav Alexander', 'First Year Pin November'],
   ['Aria Veera', 'First Year Pin November'],
   ['London Parker', 'First Year Pin November'],
-  ['Tika Churchill', 'First Year Pin November'],
   ['William Sandiford', 'First Year Pin November'],
   ['Aida Burns', '1st Medal: 2 years of drama'],
   ['Ava Hawkey', '1st Medal: 2 years of drama'],
@@ -127,7 +126,6 @@ const PDF_AWARDS = [
   ['Jaylin Climas', 'First Year Pin November'],
   ['Kayan Musembi', 'First Year Pin November'],
   ['Matthew van der Spek', 'First Year Pin November'],
-  ['Nathaniel Marsden', 'First Year Pin November'],
   ['Oren Sergi', 'First Year Pin November'],
   ['Zoe Burr', 'First Year Pin November'],
   ['Alex Hicks', '1st Medal: 2 years of drama'],
@@ -147,7 +145,6 @@ const PDF_AWARDS = [
   ['Ivy Spicer', '2nd Medal: 4 years of drama'],
   ['Lilly Foster', '2nd Medal: 4 years of drama'],
   ['Matilda Robertson', '2nd Medal: 4 years of drama'],
-  ['Trinity Parker', '2nd Medal: 4 years of drama'],
   ['Alira Hill', '3rd Medal: 6 years of drama'],
   ['Elsie Rice', '3rd Medal: 6 years of drama'],
   ['Jackson Spicer', '3rd Medal: 6 years of drama'],
@@ -185,11 +182,7 @@ const PDF_AWARDS = [
   ['Thomas McColl', '2nd Medal: 4 years of drama'],
 ];
 
-const EXTRA_AWARD_PLACEMENTS = [
-  { name: 'Tika Churchill', date: DATES.MONDAY, time: TIMES.FOUR_TO_FIVE, stage: STAGES.ONE },
-  { name: 'Nathaniel Marsden', date: DATES.WEDNESDAY, time: TIMES.FOUR_TO_FIVE, stage: STAGES.ONE },
-  { name: 'Trinity Parker', date: DATES.WEDNESDAY, time: TIMES.FIVE_TO_SIX, stage: STAGES.TWO },
-];
+const EXTRA_AWARD_PLACEMENTS = [];
 
 function keyName(name) {
   return name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');

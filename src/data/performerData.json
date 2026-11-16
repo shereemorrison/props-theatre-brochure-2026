@@ -3,7 +3,6 @@
     "Aarav Alexander",
     "Aria Veera",
     "London Parker",
-    "Tika Churchill",
     "William Sandiford",
     "Aida Burns",
     "Ava Hawkey",
@@ -50,7 +49,6 @@
     "Jaylin Climas",
     "Kayan Musembi",
     "Matthew van der Spek",
-    "Nathaniel Marsden",
     "Oren Sergi",
     "Zoe Burr",
     "Alex Hicks",
@@ -70,7 +68,6 @@
     "Ivy Spicer",
     "Lilly Foster",
     "Matilda Robertson",
-    "Trinity Parker",
     "Alira Hill",
     "Elsie Rice",
     "Jackson Spicer",
@@ -155,10 +152,6 @@
         {
           "name": "Sophie House",
           "commitment": "(None)"
-        },
-        {
-          "name": "Tika Churchill",
-          "commitment": "First Year Pin November"
         },
         {
           "name": "Willow Fuamatu",
@@ -260,11 +253,11 @@
         },
         {
           "name": "Isabella Wiegard",
-          "commitment": "(None)"
+          "commitment": "Graduate"
         },
         {
           "name": "Keira Heath",
-          "commitment": "(None)"
+          "commitment": "Graduate"
         },
         {
           "name": "Lachlan Longford",
@@ -292,7 +285,7 @@
         },
         {
           "name": "Tahlia Giffard",
-          "commitment": "2nd Medal: 4 years of drama"
+          "commitment": "Graduate"
         }
       ]
     },
@@ -461,7 +454,7 @@
         },
         {
           "name": "Charlotte Perryman",
-          "commitment": "(None)"
+          "commitment": "Graduate"
         },
         {
           "name": "Ellen Frigerio",
@@ -489,7 +482,7 @@
         },
         {
           "name": "Romilly Park",
-          "commitment": "First Year Pin November"
+          "commitment": "First Year Pin November · Graduate"
         },
         {
           "name": "Taleitha Perrow",
@@ -544,10 +537,6 @@
         },
         {
           "name": "Matthew van der Spek",
-          "commitment": "First Year Pin November"
-        },
-        {
-          "name": "Nathaniel Marsden",
           "commitment": "First Year Pin November"
         },
         {
@@ -620,10 +609,6 @@
         {
           "name": "Talia Roe",
           "commitment": "(None)"
-        },
-        {
-          "name": "Trinity Parker",
-          "commitment": "2nd Medal: 4 years of drama"
         }
       ]
     },
@@ -634,7 +619,7 @@
       "performers": [
         {
           "name": "Alira Hill",
-          "commitment": "3rd Medal: 6 years of drama"
+          "commitment": "3rd Medal: 6 years of drama · Graduate"
         },
         {
           "name": "Anais Lyons",
@@ -658,7 +643,7 @@
         },
         {
           "name": "Innes Sergi-Downie",
-          "commitment": "(None)"
+          "commitment": "Graduate"
         },
         {
           "name": "Isabelle Smith",
@@ -678,7 +663,7 @@
         },
         {
           "name": "Neve Duthie",
-          "commitment": "(None)"
+          "commitment": "Graduate"
         },
         {
           "name": "Paige Dejong",
@@ -744,7 +729,7 @@
           "commitment": "1st Medal: 2 years of drama"
         },
         {
-          "name": "Ziggy",
+          "name": "Ziggy Naidoo",
           "commitment": "(None)"
         }
       ]

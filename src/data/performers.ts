@@ -139,7 +139,7 @@ function createPerformer(
     finalCommitment = commitment;
   } else if (isFirstYearPin(commitment)) {
     finalCommitment = commitment;
-  } else if (commitment.includes('Medal')) {
+  } else if (commitment.includes('Medal') || /graduate/i.test(commitment)) {
     finalCommitment = commitment;
   }
 
